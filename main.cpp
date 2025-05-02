@@ -748,10 +748,9 @@ int mainMenu() {
     cout << "[3] Borrow book(s)" << endl;
     cout << "[4] Return book(s)" << endl;
     cout << "[5] Most borrowed books" << endl;
-    cout << "[6] Member List" << endl;
-    cout << "[7] Exit" << endl;
+    cout << "[6] Exit" << endl;
     cout << "*********************************" << endl;
-    cout << "Option (1 - 7): ";
+    cout << "Option (1 - 6): ";
 
     cin >> respond;
     switch (respond) {
@@ -761,19 +760,7 @@ int mainMenu() {
     case '4': returnBooks(); break;
     case '5': mostBorrow(); break;
     case '6': {
-        //R6: member list
-        cout << "Group Member List (in ascending order): " << endl;
-        cout << setw(20) << "Name" << setw(15) << "Student ID" << setw(5) << "Class" << endl;
-        cout << setw(20) << "Liu Wing Him" << setw(15) << "22112985A" << setw(5) << "203B" << endl;
-        cout << setw(20) << "Chan Chun Man" << setw(15) << "22132580A" << setw(5) << "203A" << endl;
-        cout << setw(20) << "Lam Ying Tone" << setw(15) << "22095228A" << setw(5) << "203C" << endl;
-        cout << setw(20) << "Lee Lok San" << setw(15) << "22131846A" << setw(5) << "203C" << endl;
-        cout << setw(20) << "Lee Wing Hang" << setw(15) << "22168378A" << setw(5) << "203A" << endl;
-        cout << setw(20) << "Yuen Cheuk Man" << setw(15) << "22126690A" << setw(5) << "203C" << endl;
-        break;
-    }
-    case '7': {
-        //R7: Exit
+        //R6: Exit
         do {
             cout << "Confirm to exit? [Y/N]: ";
             cin >> respond;
